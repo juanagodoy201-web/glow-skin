@@ -3,7 +3,8 @@ name: Publicar Glow Skin
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -29,7 +30,7 @@ jobs:
       - name: Construir sitio
         run: npm run build
 
-      -       - name: Configurar Pages
+      - name: Configurar Pages
         uses: actions/configure-pages@v5
         with:
           enablement: true
