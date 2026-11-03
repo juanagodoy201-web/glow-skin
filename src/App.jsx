@@ -111,7 +111,7 @@ function App() {
         </footer>
 
       </div>
-    </BrowserRouter>
+    <BrowserRouter basename="/glow-skin">
   )
 }
 
