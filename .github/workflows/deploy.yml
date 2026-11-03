@@ -29,8 +29,10 @@ jobs:
       - name: Construir sitio
         run: npm run build
 
-      - name: Configurar Pages
+      -       - name: Configurar Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Subir archivos
         uses: actions/upload-pages-artifact@v3
